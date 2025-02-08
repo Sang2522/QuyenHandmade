@@ -1,0 +1,80 @@
+/* Chỉnh sửa ảnh nền để phủ toàn màn hình */
+.full-bg {
+    background-image: url(images/bg-2.webp); /* Thay bằng link ảnh của bạn */
+    background-size: cover;
+    /* background-position: center; */
+    height: 100vh; /* Chiều cao full màn hình */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    color: white;
+}
+
+/* Text style */
+.overlay-text {
+    background: rgba(0, 0, 0, 0.5); /* Nền tối mờ để text nổi bật */
+    padding: 20px;
+    border-radius: 8px;
+}
+.custom-text-size {
+    font-size: 20px;  /* Thay đổi kích thước chữ tại đây */
+}
+.custom-active-color {
+    color: #d9d9d9; /* Màu chữ mặc định */
+}
+
+.custom-btn {
+    background-color: #75d3fb;  /* Màu nền */
+    color: white;  /* Màu chữ */
+    padding: 12px 24px;  /* Padding */
+    border-radius: 50px;  /* Bo góc tròn */
+    font-size: 16px;  /* Kích thước chữ */
+    border: 2px solid;  /* Bỏ border mặc định */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển màu nền và scale */
+  }
+
+  /* Thêm hiệu ứng khi hover */
+  .custom-btn:hover {
+    background-color: #12c2fd;  /* Màu nền khi hover */
+    transform: scale(1.05);  /* Hiệu ứng phóng to */
+    border: 1px solid;
+  }
+
+  /* Hiệu ứng khi button được nhấn */
+  .custom-btn:active {
+    background-color: #ff1038;  /* Màu khi nhấn */
+    transform: scale(0.98);  /* Nhấn xuống */
+    border: 1px solid;
+}
+
+/* Tùy chỉnh cho section sản phẩm */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  .product-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .product-name {
+    font-weight: 600;
+    color: #333;
+  }
+  .product-price {
+    color: #F3763E;
+    font-weight: 500;
+  }
+  .product-description {
+    color: #666;
+    font-size: 14px;
+}
+.custom-text {
+    color: #333;
+}
